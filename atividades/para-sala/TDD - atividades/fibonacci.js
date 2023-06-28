@@ -1,17 +1,15 @@
-const fibonacci = (num) => {
-    if (num < 2) return num;
+
+function fibonacciSeq(index, tam){
+
+  const fibonacci = [0 ,1];
+
+  for(let i = 2; i <= index + tam; i++){
+    fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+  }
+  return fibonacci.slice(index, index + tam)
+}
+
+console.log(fibonacciSeq(6 , 7))
   
-    let prev = 0;
-    let current = 1;
-  
-    for (let i = 2; i <= num; i++) {
-      const temp = current;
-      current += prev;
-      prev = temp;
-    }
-  
-    return current;
-  };
-  
-  module.exports = fibonacci;
+  module.exports = fibonacciSeq;
   

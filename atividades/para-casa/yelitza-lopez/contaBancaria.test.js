@@ -14,7 +14,7 @@ describe('Should check a bank account information', () =>{
     })
 
     test('check the deposit to a bank account', () =>{
-        const output = `Seu saldo é de ${deposit}`
+        const output = `Deposito de ${deposit}`
         expect(deposit(500)).toEqual(output)
 
     })

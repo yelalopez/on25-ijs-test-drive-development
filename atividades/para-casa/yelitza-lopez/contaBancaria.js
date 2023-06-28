@@ -7,8 +7,8 @@ function bankAccount(nameAccount, balance, limit){
 }
 
 function deposit(amount){
-    this.deposit += amount;
-    return `Seu saldo é de ${deposit}`
+    this.balance += amount;
+    return `Deposito de ${deposit}`
 }
 
 function withdraw(amount){
