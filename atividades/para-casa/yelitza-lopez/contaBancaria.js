@@ -7,7 +7,7 @@ function bankAccount(nameAccount, balance, limit){
 }
 
 function deposit(amount){
-    this.balance += amount;
+    this.balance += amount
     return `Deposito de ${deposit}`
 }
 
